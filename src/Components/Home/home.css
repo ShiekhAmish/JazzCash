@@ -1,0 +1,73 @@
+.search-input {
+  width: 150px; /* Adjust as needed */
+  transition: width 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none; /* Removes default outline */
+  box-shadow: none; /* Removes default box shadow on focus */
+  width: 200px; /* Adjust width on focus if needed */
+}
+.carousel-item {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform-style: preserve-3d;
+  }
+  
+  .carousel-item-next, .carousel-item-prev {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  
+  .carousel-item-next.carousel-item-left, .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+  
+  .carousel-item-prev.carousel-item-left {
+    opacity: 1;
+    transform: rotateY(-90deg);
+  }
+  .carousel-down-button{
+    border-right: 1px solid rgb(192, 183, 183);
+    background-color: #b7100f;
+    color: white;
+  }
+  .carousel-down-button:hover{
+    border-right: 1px solid rgb(192, 183, 183);
+    background-color: #333;
+    color: white;
+  }
+  .carousel-down-button ,.p{
+    font-size: 20px;
+  }
+  /* src/components/HeadlineBanner.css */
+.headline-banner {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    font-weight: 700;
+    background-color: #b7100f; /* Background color for visibility */
+    height: 30px; /* Adjust height as needed */
+    line-height: 30px; /* Center text vertically */
+    border-bottom: 1px solid #dee2e6; /* Optional: adds a border for separation */
+  }
+  
+  .headline-text {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 20s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .no-underline {
+    text-decoration: none;
+  }
+  
