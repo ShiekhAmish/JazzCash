@@ -1,0 +1,82 @@
+@keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .headline-business-banner {
+    color: rgb(255, 0, 0);
+    /* font-weight: 700; */
+    background-color: #ffffff; 
+    height: 30px; 
+    line-height: 30px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .headline-business-text {
+    display: inline-block;
+    white-space: nowrap;
+    width: 80%;
+    will-change: transform;
+    animation: marquee 10s linear infinite;
+  }
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .fade-in-left {
+    animation: fadeInLeft 1s ease-in-out forwards;
+  }
+  
+  .fade-in-right {
+    animation: fadeInRight 1s ease-in-out forwards;
+  }
+  .form-label {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #aaaaaa;
+  }
+  
+  .form-control {
+    
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid #e3e3e3;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  textarea.form-control {
+    resize: none;
+  }
+  .btn-outline-danger{
+    background-color: #cc0000;
+    color: white;
+  }
+  .btn-outline-danger:hover{
+    background-color: white;
+    color: #cc0000;
+  }

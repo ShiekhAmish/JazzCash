@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import './home.css';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 const Home = () => {
     const navigate = useNavigate();
 
@@ -9,142 +11,7 @@ const Home = () => {
   };
   return (
     <>
-    <div className="top-header text-white d-none d-sm-block" style={{backgroundColor:'#535353'}}>
-      <div className="container-fluid d-flex justify-content-between align-items-center">
-        
-        <div className="user-options">
-          <a href="#" className="text-light mx-3">Jazz</a>
-          <a href="#" className="text-light mx-3 ">JazzCash</a>
-          <a href="#" className="text-light mx-3 ">xlr8</a>
-          <a href="#" className="text-light mx-3 ">Business</a>
-          <a href="#" className="text-light mx-3 ">Foundation</a>
-          <a href="#" className="text-light mx-3 ">Compliance</a>
-
-        </div>
-        <div className="social-icons">
-          <a href="#" className="text-white mx-2"><i className="fab fa-facebook-f"></i></a>
-          <a href="#" className="text-white mx-2"><i className="fab fa-twitter"></i></a>
-          <a href="#" className="text-white mx-2"><i className="fab fa-instagram"></i></a>
-          <a href="#" className="text-white mx-2"><i className="fab fa-linkedin-in"></i></a>
-        </div>
-      </div>
-    </div>
-    <header>
-      <nav className="navbar navbar-expand-lg navbar-white bg-white shadow-sm">
-        <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
-            <img
-              src="./img/Home/mobilink_logo.png" // Add your logo path here
-              alt="JazzCash Logo"
-              className="d-inline-block align-top"
-              
-            />
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle text-danger"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                JAZZ SHOP
-              </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a className="dropdown-item" onClick={() => handleDropdownClick('/action1')} href="#">Action</a></li>
-                <li><a className="dropdown-item" onClick={() => handleDropdownClick('/action2')} href="#">Another action</a></li>
-                <li><a className="dropdown-item" onClick={() => handleDropdownClick('/action3')} href="#">Something else here</a></li>
-              </ul>
-            </li>
-              <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle text-danger"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                MOBILE ACCOUNT
-              </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a className="dropdown-item" onClick={() => handleDropdownClick('/action1')} href="#">Action</a></li>
-                <li><a className="dropdown-item" onClick={() => handleDropdownClick('/action2')} href="#">Another action</a></li>
-                <li><a className="dropdown-item" onClick={() => handleDropdownClick('/action3')} href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle text-danger"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                DIGITAL PAYMENTS
-              </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a className="dropdown-item" onClick={() => handleDropdownClick('/action1')} href="#">Action</a></li>
-                <li><a className="dropdown-item" onClick={() => handleDropdownClick('/action2')} href="#">Another action</a></li>
-                <li><a className="dropdown-item" onClick={() => handleDropdownClick('/action3')} href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle text-danger"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                CORPORATE
-              </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a className="dropdown-item" onClick={() => handleDropdownClick('/action1')} href="#">Action</a></li>
-                <li><a className="dropdown-item" onClick={() => handleDropdownClick('/action2')} href="#">Another action</a></li>
-                <li><a className="dropdown-item" onClick={() => handleDropdownClick('/action3')} href="#">Something else here</a></li>
-              </ul>
-            </li>
-             
-              <li className="nav-item">
-                <Link className="nav-link text-dark f-600" to="#">JAZZCASH FOR BUSINESS</Link>
-              </li>
-              <li className="nav-item">
-  <form className="d-flex align-items-center">
-    <i className="fa-solid fa-magnifying-glass" style={{ color: "#595959" }}></i>
-    <input
-      className="form-control search-input border-0"
-      type="search"
-      placeholder="Search"
-      aria-label="Search"
-    />
-  </form>
-</li>
-
-
-            </ul>
-            
-            
-          </div>
-        </div>
-      </nav>
-    </header>
+    <Header/>
     <div id="carouselExampleIndicators" className="carousel slide">
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -300,86 +167,7 @@ const Home = () => {
 </div>
 </div>
 
-<footer class="text-center text-lg-start bg-body-tertiary text-muted">
-
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-
-    <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
-    </div>
-
-    <div>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-
-  </section>
-
-  <section class="text-dark">
-  <div class="text-center text-md-start mt-5">
-    <div class="row mt-3 overflow-hidden w-100">
-      
-      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-        <h6 class="fw-bold mb-4">JazzCash Shop</h6>
-        <p style={{ marginBottom: '0.5rem' }}><a href="#!" class="text-reset no-underline">Money Transfer</a></p>
-        <p style={{ marginBottom: '0.5rem' }}><a href="#!" class="text-reset no-underline">Bill Payment</a></p>
-        <p style={{ marginBottom: '0.5rem' }}><a href="#!" class="text-reset no-underline">Payments</a></p>
-        <p style={{ marginBottom: '0.5rem' }}><a href="#!" class="text-reset no-underline">Mobile Account Services</a></p>
-      </div>
-
-      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-        <h6 class="fw-bold mb-4">Mobile Account</h6>
-        <p style={{ marginBottom: '0.5rem' }}><a href="#!" class="text-reset no-underline">Money Transfer</a></p>
-        <p style={{ marginBottom: '0.5rem' }}><a href="#!" class="text-reset no-underline">Bill Payment</a></p>
-        <p style={{ marginBottom: '0.5rem' }}><a href="#!" class="text-reset no-underline">Mobile Load</a></p>
-        <p style={{ marginBottom: '0.5rem' }}><a href="#!" class="text-reset no-underline">Account Closure Request Process</a></p>
-      </div>
-
-      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-        <h6 class="text-uppercase fw-bold mb-4">Corporate</h6>
-        <p style={{ marginBottom: '0.5rem' }}><a href="#!" class="text-reset no-underline">Corporate Disbursement Solutions</a></p>
-        <p style={{ marginBottom: '0.5rem' }}><a href="#!" class="text-reset no-underline">Corporate Collection Solutions</a></p>
-      </div>
-
-      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-        <h6 class="text-uppercase fw-bold mb-4">Digital Payments</h6>
-        <p style={{ marginBottom: '0.5rem' }}><a href="#!" class="text-reset no-underline">Online Payments</a></p>
-      </div>
-
-      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-        <h6 class="text-uppercase fw-bold mb-4">Other</h6>
-        <p style={{ marginBottom: '0.5rem' }}><a href="#!" class="text-reset no-underline">Terms & Conditions</a></p>
-        <p style={{ marginBottom: '0.5rem' }}><a href="#!" class="text-reset no-underline">Schedule of Charges</a></p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<div className="d-flex align-items-center justify-content-between p-4" style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}>
-  <img src="./img/Home/mobilink_logo.png" alt="Mobilink Logo" />
-  <span className="text-center mx-auto">
-    © Copyrights 2024 JazzCash. All Rights Reserved
-  </span>
-</div>
-
-</footer>
+<Footer/>
 
     </>
   )
