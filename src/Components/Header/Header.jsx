@@ -134,7 +134,7 @@ const Header = () => {
               </li>
               <li className="nav-item">
   <form className="d-flex align-items-center">
-    <i className="fa-solid fa-magnifying-glass" style={{ color: "#595959" }}></i>
+    <i className="fa-solid fa-magnifying-glass mx-2" style={{ color: "#595959" }}></i>
     <input
       className="form-control search-input border-0"
       type="search"
